@@ -229,6 +229,9 @@ footer {
     justify-content: space-between;
     align-items: center;
 }
+.copy{
+    margin-left: 5px;
+}
 .copy a {
     color: #F38181;
     text-decoration: none;
@@ -236,6 +239,7 @@ footer {
 /* form */
 form {
     display: flex;
+    margin-right: 5px;
 }
 input{
     padding: 11px 10px;
@@ -299,7 +303,6 @@ input[type=button]:hover {
   }
 /* @media */
 @media(max-width: 768px){
-    
     label {
         width: 30px;
         height: 30px;
@@ -370,6 +373,7 @@ input[type=button]:hover {
         flex-direction: column;
         justify-content: center;
         transform: scaleY(1);
+        transition: opacity 1s;
     }
 }
 @media(max-width: 768px){
@@ -386,15 +390,18 @@ input[type=button]:hover {
     .service-items li {
         width: 50%;
     }
+    section{
+        padding: 0;
+    }
 }
 @media (max-width: 425px){
-    .service-items ul li{
-        display: block;
-        margin-bottom: 20px;
-        margin-top: 0;
+    .service-items li {
+        display: flex;
+        width: 100%;
+        margin-bottom: 30px;
     }
-    .service-items li img {
-        margin: 0 50px;
+    .service-items li h3 {
+        margin-bottom: 5px;
     }
 }
 @media(max-width: 425px){
@@ -426,12 +433,24 @@ input[type=button]:hover {
 @media(max-width: 425px){
     .social {
         padding-top: 210px;
+        margin-left: 22px;
+    }
+    .member-profile h3 {
+        margin: 10px 0 10px;
     }
 }
 @media (max-width: 425px){
     footer {
        flex-wrap: wrap;
        justify-content: center;
+   }
+}
+@media (max-width: 320px){
+    form input{
+        padding: 0 5px;
+   }
+   footer p, form{
+       margin-left: 6px;
    }
 }
 @media(max-width: 1024px){
